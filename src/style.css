@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#app {
+  width: 500px;
+  background: #fff;
+  padding: 20px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  text-align: center;
+}
+
+#title {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+#secondtitle{
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #ffa0cd;
+}
+
+.todo-input {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+#newTodoInput {
+  flex: 1;
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ffa0cd;
+  border-radius: 4px;
+  
+}
+
+#newTodoInput::placeholder{
+  color: #ffa0cd;
+  opacity: 1;
+}
+
+#newTodoInput:focus{
+  
+  outline-color: #f963af;
+
+}
+
+#addTodoButton {
+  padding: 8px 12px;
+  font-size: 16px;
+  border: none;
+  background-color: #ffa0cd;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#addTodoButton:hover {
+  background-color: #ffa0cd;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  background: #ffe0ee;
+  margin-bottom: 8px;
+  border-radius: 4px;
+  border-left: 4px solid transparent;
+}
+
+li.completed {
+  text-decoration: line-through;
+  color: #ffc0dd;
+  border-left-color: #ffa0cd;
+}
+
+.actions {
+  display: flex;
+  gap: 8px;
+}
+
+.actions button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  color: #ffa0cd;
+  font-size: 14px;
+}
+
+.actions button:hover {
+  color: #ffa0cd;
+}
